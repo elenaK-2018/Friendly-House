@@ -1,0 +1,56 @@
+html {
+    position: relative;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "HelveticaNeueCyr", "Comfortaa", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 30px;
+    color: #000;
+    background-color: #fff;
+    overflow-x: hidden;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+button {
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+form,
+fieldset {
+    margin: 0;
+}

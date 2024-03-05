@@ -1,0 +1,16 @@
+.about {
+    margin-top: 114px;
+    margin-bottom: 160px;    
+}
+
+.about__title {
+    margin-bottom: 20px;
+}
+
+.about__description {
+    white-space: pre-line;
+}
+
+.about__description:not(:last-child) {
+    margin-bottom: 20px;
+}

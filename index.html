@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="fonts/HelveticaNeueCyr-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/HelveticaNeueCyr-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Comfortaa-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <title>Friendly House</title>    
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>    
+    <section class="about">
+        <div class="container">
+            <h2 class="title about__title">О приюте</h2>
+
+            <p class="about__description">Приют "Friendly House" - это целый комплекс
+            для бездомных и брошенных животных.</p>
+
+            <p class="about__description">В приюте работает сплочённая команда, которая
+            занимается помощью бездомным животным 
+            в течении многих лет. Мы заботимся о качестве
+            жизни наших подопечных и осуществляем
+            профессиональный медицинский уход.</p>
+        </div>
+    </section>
+
+    <section class="help">
+        <div class="container">
+            <h2 class="title title-orange help__title">Как ты можешь нам помочь?</h2>
+            <ul class="list help__list">
+                <li class="list__item">
+                    <p class="list__description list__description_title">    Финансово 
+                    Мы будем рады любым пожертвованиям.  
+                    Деньги пойдут на корм, лечение и уход,
+                    а также, на обустройство территории, где 
+                    обитают наши маленькие питомцы.</p>
+                </li>
+
+                <li class="list__item">
+                    <p class="list__description list__description_title">   Стать волонтёром                              
+                    Наш приют "Friendly House" привлекает волонтеров для
+                    оказания помощи в самых разных форматах! От финансовой 
+                    помощи и набирающего популярность интеллектуального
+                    волонтерства до помощи руками. </p>
+                
+                    <p class="list__description">
+                    Нам всегда нужна помощь с выгулом подопечных, уборкой
+                    помещений, привезти в приют корм или медикаменты,помочь
+                    с перевозкой животных в клиники, забрать и привезти вещи 
+                    и много всего другого. Мы всегда рады любой помощи,
+                    присоединяйтесь к нашей дружной команде! </p>
+                </li>
+
+                <li class="list__item">
+                    <p class="list__description list__description_title">   Стать опекуном
+                    <b>Хотите друга, но не можете взять домой?                    
+                    Проект опеки - идеальное решение! </b></p>
+
+                    <p class="list__description">  
+                    Взять под опеку животное, у которого еще нет
+                    опекуна, – это как завести питомца, о котором всю
+                    жизнь мечтал, но не мог себе этого позволить
+                    по каким-либо причинам.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <section class="form-block">
+        <div class="form-block__container">
+            <h2 class="title title-orange form-block__title">Ты можешь помочь нам!</h2>
+            <p class="form-block__subtitle">Хочешь забрать питомца, стать волонтером, или опекуном? </p>
+            <p class="form-block__subtitle form-block__subtitle_orange">Свяжись с нами!</p>
+            <ul class="contacts">
+                <li class="contacts__list">
+                    <a href="tel:88493003957" class="contacts__item contacts__item_tel" target="_blank">
+                    <svg class="contacts__icon" width="24" height="24" viewbox="0 0 24 24" fill="currentColor">
+                        <path d="M20.01 15.38C18.78 15.38 17.59 15.18 16.48 14.82C16.13 14.7 15.74 14.79 15.47 15.06L13.9 17.03C11.07 15.68 8.42 13.13 7.01 10.2L8.96 8.54C9.23 8.26 9.31 7.87 9.2 7.52C8.83 6.41 8.64 5.22 8.64 3.99C8.64 3.45 8.19 3 7.65 3H4.19C3.65 3 3 3.24 3 3.99C3 13.28 10.73 21 20.01 21C20.72 21 21 20.37 21 19.82V16.37C21 15.83 20.55 15.38 20.01 15.38Z"/>                
+                    </svg>8 (849) 300 - 39 -57
+                    </a>
+                </li>
+
+                <li class="contacts__list">
+                    <a href="mailto:FriendlyHouse@gmail.com" class="contacts__item contacts__item_mail" target="_blank">
+                        <svg class="contacts__icon" width="24" height="24" viewbox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" />
+                        </svg>FriendlyHouse@gmail.com                         
+                    </a>
+                </li>                    
+            </ul>
+            <p class="form-block__subtitle form-block__subtitle_fieldset">Или оставь свои контакты и мы сами свяжемся с тобой!</p>
+            
+            <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+                <fieldset class="form__fieldset">                
+                    <label class="form__label">Номер телефона
+                        <input type="tel" class="form__input" name="phone" required>
+                    </label>
+
+                    <label class="form__label">E-mail
+                        <input type="email" class="form__input" name="mail" required>
+                    </label>
+                </fieldset>
+
+                <button class="form__button" type="submit" >Отправить</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
