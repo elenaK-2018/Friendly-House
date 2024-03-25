@@ -25,7 +25,7 @@
 }
 
 .form-block__subtitle_orange {
-    color: #ff8a00;
+    color: var(--orange);
     margin-bottom: 20px;
     font-weight: 500;
 }
@@ -37,7 +37,7 @@
 
 .contacts__icon {
     vertical-align: middle;
-    color: #ff8a00;
+    color: var(--orange);
     margin-right: 14px;
 }
 
@@ -47,7 +47,7 @@
 
 .form-block__subtitle_fieldset {
     margin-bottom: 15px;
-    color: #282626;
+    color: var(--gray);
 }
 
 .form__fieldset {
@@ -56,14 +56,14 @@
     margin: 0 auto;
     padding: 0;
     margin-bottom: 35px;
-    color: #282626;
+    color: var(--gray);
 }
 
 .form__input {
     display: block;
     width: 280px;
     height: 40px;
-    background-color: #fff;
+    background-color: var(--white);
     border: 0;
 }
 
@@ -81,8 +81,8 @@
 .form__button {
     width: 220px;
     height: 40px;
-    background-color: #282626;
-    color: #ff8a00;
+    background-color: var(--gray);
+    color: var(--orange);
     font-size: 12px;
     line-height: 16px;
     text-transform: uppercase;

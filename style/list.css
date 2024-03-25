@@ -18,7 +18,7 @@
     font-family: "Comfortaa";
     content: counter(my-counter);
     counter-increment: my-counter;
-    color: #ff8a00;
+    color: var(--orange);
     font-size: 45px;
     font-weight: 300;
     font-style: normal;
