@@ -1,20 +1,17 @@
+.list__item_one {
+    display: flex;
+    gap: 120px;
+}
+
 .list__item {
-    list-style: none;
+    margin-bottom: 50px;
 }
 
-.list__item:not(:last-child) {
-    margin-bottom: 70px;
+.list__description-one {
+    max-width: 483px;
 }
 
-.list__description {
-    white-space: pre-wrap;
-}
-
-.list__description:not(:last-child) {
-    margin-bottom: 5px;
-}
-
-.list__description_title:before {
+.list__description-title:before {
     font-family: "Comfortaa";
     content: counter(my-counter);
     counter-increment: my-counter;
@@ -22,11 +19,54 @@
     font-size: 45px;
     font-weight: 300;
     font-style: normal;
-    margin-right: 45px;
+    margin-right: 52px;
 }
 
-.list__description_title:first-line {
+.list__description-title {
+    display: inline-block;
     font-size: 30px;
     font-weight: 500;
-    line-height: 80px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.list__description-text {
+    padding-left: 78px;
+}
+
+.list__description-text:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.list__description_two {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.list__description-text_two {
+    padding-left: 0;
+}
+
+.list__item_three {
+    display: flex;
+    gap: 20px;
+}
+
+.list__description-three {
+    max-width: 580px;
+}
+
+.help__img_three {
+    max-width: 580px;
+}
+
+.list__description-text_three {
+    font-weight: 500;
+    max-width: 500px;
+}
+
+.list__description-block {
+    max-width: 580px;
+    order: 1;
 }

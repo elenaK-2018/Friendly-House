@@ -10,16 +10,16 @@
 .pets__list {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 322px 326px;
     gap: 48px 20px;
-    height: 722px;
 }
 
 .pets__img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
     margin-bottom: 20px;
+    object-fit: cover;
 }
 
 .pets__subtitle {
@@ -71,9 +71,8 @@
     .pets__list {
         display: grid;
         grid-template-columns: repeat(9, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: 235px 338px;
         gap: 40px 20px;
-        height: 613px;
     }
 
     .pets__img {
@@ -123,7 +122,6 @@
     .pets__list {
         grid-template-rows: 282px 384px 726px;
         gap: 30px 24px;
-        height: 1452px;
     }
 
     .pets__subtitle {

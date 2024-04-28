@@ -1,5 +1,6 @@
 .list-pr__item {
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
@@ -17,25 +18,6 @@
     font-size: 20px;
     margin-bottom: 20px;
     line-height: 30px;
-}
-
-.list-pr__link {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
-
-.list-pr__text {
-    font-size: 20px;
-    line-height: 26px;
-    font-weight: 500;
-    color: var(--orange);
-}
-
-.list-pr__arrow {
-    color: var(--orange);
-    width: 29px;
-    height: 29px;
 }
 
 .list-pr {
@@ -60,15 +42,6 @@
         font-size: 18px;
         line-height: 26px;
         margin-bottom: 11px;
-    }
-
-    .list-pr__link {
-        gap: 9px;
-    }
-
-    .list-pr__text {
-        font-size: 18px;
-        line-height: 24px;
     }
 
     .list-pr {
@@ -101,15 +74,6 @@
         font-size: 14px;
         line-height: 20px;
         margin-bottom: 10px;
-    }
-
-    .list-pr__link {
-        gap: 10px;
-    }
-
-    .list-pr__text {
-        font-size: 14px;
-        line-height: 20px;
     }
 
     .list-pr {

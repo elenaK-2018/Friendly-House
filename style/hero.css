@@ -1,0 +1,31 @@
+.hero__wrapper {
+    position: relative;
+    max-width: 1220px;
+    min-height: 580px;
+    padding-left: 71px;
+}
+
+.hero__wrapper:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../image/hero.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 580px;
+    min-height: 580px;
+    right: 0;
+    bottom: 0;
+}
+
+.hero__title {
+    max-width: 413px;
+    font-family: "HelveticaNeueCyr";
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 300;
+    padding-top: 137px;
+    margin-bottom: 81px;
+}
+
+
