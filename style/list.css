@@ -51,14 +51,12 @@
 .list__item_three {
     display: flex;
     gap: 20px;
-}
-
-.list__description-three {
-    max-width: 580px;
+    align-items: center;
 }
 
 .help__img_three {
     max-width: 580px;
+    min-height: 382px;
 }
 
 .list__description-text_three {

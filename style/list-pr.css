@@ -2,6 +2,13 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    border: 1px solid transparent;
+    transition: 0.4s ease-in-out;
+}
+
+.list-pr__item:hover,
+.list-pr__item:focus {
+    border: 1px solid var(--orange);
 }
 
 .list-pr__img {

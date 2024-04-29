@@ -14,6 +14,14 @@
 
 .other-projects__photo {
     width: 100%;
+    border: 1px solid transparent;
+    transition: 0.4s ease-in-out;
+}
+
+.other-projects__photo:hover,
+.other-projects__photo:focus {
+    width: 100%;
+    border: 1px solid var(--orange);
 }
 
 .other-projects__arrow {

@@ -87,6 +87,9 @@
 
 .form__label {
     display: block;
+}
+
+.form__label-text {
     font-size: 12px;
     line-height: 14px;
     text-align: start;
@@ -126,6 +129,10 @@
 .btn__img:hover {
     -webkit-filter: drop-shadow(4px 6px 0px rgba(0, 0, 0, 0.25));
     filter: drop-shadow(4px 6px 0px rgba(0, 0, 0, 0.25));
+}
+
+.btn__text {
+    display: block;
 }
 
 .form-block__close {
