@@ -1,0 +1,92 @@
+.footer {
+    background-color: var(--gray);
+    padding-top: 90px;
+    padding-bottom: 90px;
+    color: var(--white);
+}
+
+.footer__wrapper {
+    display: flex;
+    gap: 120px;
+    margin-bottom: 87px;
+}
+
+.footer__map {
+    max-width: 680px;
+    min-height: 360px;
+}
+
+.footer__address-block {
+    padding-top: 64px;
+}
+
+.footer__title {
+    font-size: 40px;
+    line-height: 40px;
+    font-family: "Comfortaa";
+    margin-bottom: 8px;
+}
+
+.footer__subtitle {
+    line-height: 26px;
+    margin-bottom: 22px;
+}
+
+.footer__address {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 30px;
+}
+
+.footer__item-tel {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer__item-mail {
+    display: block;
+}
+
+.footer__copyright {
+    display: flex;
+    gap: 369px;
+}
+
+.footer__logo-img {
+    height: 42.59px;
+}
+
+.footer__logo-title {
+    line-height: 26px;
+}
+
+.footer__social {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 18px;
+}
+
+.footer__social-item {
+    width: 38.4px;
+    height: 38.4px;
+}
+
+.footer__social-img {
+    color: var(--orange);
+    transition: 0.3s ease-in-out;
+}
+
+.footer__social-img:hover {
+    color: #9b692f;
+}
+
+.footer__social-img:focus,
+.footer__social-img:active {
+    color: #f4972a;
+}
+
+.footer__design {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+}

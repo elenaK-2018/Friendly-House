@@ -22,7 +22,17 @@
 }
 
 .header__logo {
+    width: 355.52px;
     height: 71.83px;
+}
+
+.header__logo-img{
+    height: 44.6px;
+}
+
+.header__logo-title {
+    display: block;
+    line-height: 20px;
 }
 
 .header__contact {

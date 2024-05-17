@@ -120,6 +120,13 @@ figure {
     overflow: hidden;
 }
 
+.logo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
 @media (max-width: 1024px) {
     .container {
         max-width: 920px;
