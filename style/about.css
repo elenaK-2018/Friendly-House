@@ -10,18 +10,20 @@
     margin-bottom: 30px;
 }
 
-.about__description {
-    white-space: pre-line;
-}
-
 .about__description:not(:last-child) {
     margin-bottom: 30px;
+}
+
+.about__left {
+    max-width: 480px;
 }
 
 .about__right {
     display: flex;
     gap: 27px;
     flex-direction: column;
+    width: 580px;
+    height: auto;
 }
 
 .about__right-img {
@@ -29,10 +31,108 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 580px;
+    width: 100%;
     height: 330px;
 }
 
 .about__link {
     margin-left: auto;
+}
+
+@media (max-width: 1024px) {
+    .about__wrapper {
+        min-height: 448px;
+        gap: 20px;
+        padding-top: 70px;
+        padding-bottom: 28px;
+    }
+
+    .about__title {
+        margin-bottom: 20px;
+    }
+
+    .about__description {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .about__description:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    .about__left {
+        max-width: 378px;
+    }
+
+    .about__right {
+        gap: 13px;
+        width: 480px;
+    }
+
+    .about__right-img {
+        height: 308px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about__wrapper {
+        min-height: 754px;
+        gap: 30px;
+        flex-direction: column;
+        padding-top: 60px;
+        padding-bottom: 21px;
+    }
+
+    .about__description {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .about__description:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    .about__left {
+        max-width: 700px;
+    }
+
+    .about__right {
+        gap: 10px;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .about__right-img {
+        height: 450px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about__wrapper {
+        min-height: 271px;
+        gap: 20px;
+        padding-top: 30px;
+        padding-bottom: 11px;
+    }
+
+    .about__description {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .about__description:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    .about__left {
+        max-width: 270px;
+    }
+
+    .about__right {
+        width: 271px;
+    }
+
+    .about__right-img {
+        height: 174px;
+    }
 }

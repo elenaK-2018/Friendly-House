@@ -1,12 +1,14 @@
 html {
     position: relative;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
     box-sizing: inherit;
+    /* border: 1px solid black; */
 }
 
 body {
@@ -67,12 +69,12 @@ figure {
     color: var(--orange);
 }
 
-.section:not(:first-child) {
-    padding-top: 45px;
-}
-
 .section:not(:last-child) {
     padding-bottom: 45px;
+}
+
+.section:not(:first-child) {
+    padding-top: 45px;
 }
 
 .section:last-child {
@@ -80,13 +82,19 @@ figure {
 }
 
 .btn {
-    display: block;
+    position: relative;
     width: 180px;
     text-transform: uppercase;
+    color: var(--orange);
+    z-index: 10;
+}
+
+.btn__text {
+    display: block;
     font-size: 14px;
     line-height: 22px;
     font-weight: 550;
-    color: var(--orange);
+    margin: 0 auto;
 }
 
 .btn__img {
@@ -103,6 +111,7 @@ figure {
 .link {
     display: flex;
     gap: 19px;
+    align-items: center;
     line-height: 26px;
     font-weight: 550;
     color: var(--orange);
@@ -136,6 +145,44 @@ figure {
         font-size: 44px;
         line-height: 54px;
     }
+
+    .btn {
+        width: 148px;
+    }
+
+    .btn__text {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 500;
+    }
+
+    .btn__img {
+        max-width: 75.51px;
+        height: 64.48px;
+    }
+
+    .section:not(:last-child) {
+        padding-bottom: 35px;
+    }
+    
+    .section:not(:first-child) {
+        padding-top: 35px;
+    }
+
+    .link {
+        gap: 9px;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 930px) {
+    .link {
+        gap: 10px;
+        font-size: 14px;
+        line-height: 20px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -148,16 +195,60 @@ figure {
         font-size: 30px;
         line-height: 34px;
     }
+
+    .section:not(:last-child) {
+        padding-bottom: 30px;
+    }
+    
+    .section:not(:first-child) {
+        padding-top: 30px;
+    }
+
+    .section:last-child {
+        padding-bottom: 60px;
+    }
+
+    .btn {
+        padding-left: 60px;
+        width: 215px;
+    }
+}
+
+@media (max-width: 550px) {
+    .btn {
+        order: 1;
+        padding-left: 0;
+        align-self: center;
+        width: 84px;
+    }
+
+    .btn__text {
+        font-size: 8px;
+        line-height: 12px;
+    }
+
+    .btn__img {
+        width: 46.4px;
+        height: 40.3px;
+    }
 }
 
 @media (max-width: 480px) {
     .container {
-        max-width: 290px;
+        max-width: 320px;
         padding: 0 10px;
     }
 
     .title {
         font-size: 20px;
         line-height: 24px;
+    }
+
+    .section:not(:last-child) {
+        padding-bottom: 20px;
+    }
+    
+    .section:not(:first-child) {
+        padding-top: 20px;
     }
 }

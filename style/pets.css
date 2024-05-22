@@ -7,6 +7,10 @@
     margin-bottom: 50px;
 }
 
+.pets__arrow {
+    display: none;
+}
+
 .pets__list {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -111,7 +115,6 @@
 
 @media (max-width: 768px) {
     .pets {
-        padding-top: 31px;
         padding-bottom: 66px;
     }
 
@@ -119,9 +122,20 @@
         margin-bottom: 30px;
     }
 
+    .pets__arrow {
+        display: flex;
+        color: var(--orange);
+    }
+
+    .button__img {
+        width: 54px;
+        height: 54px;
+    }
+
     .pets__list {
-        grid-template-rows: 282px 384px 726px;
-        gap: 30px 24px;
+        display: flex;
+        gap: 20px;
+        height: 434px;
     }
 
     .pets__subtitle {
@@ -130,33 +144,33 @@
     }
 
     .pets__item_one {
-        grid-column: 1/7;
-        grid-row: 1/2;
+        width: 540px;
+        height: 434px;
     }
 
     .pets__item_two {
-        grid-column: 7/10;
-        grid-row: 1/2;
+        width: 459px;
+        height: 434px;
     }
 
     .pets__item_three {
-        grid-column: 5/10;
-        grid-row: 3/4;
+        width: 280px;
+        height: 434px;
     }
 
     .pets__item_fourth {
-        grid-column: 1/5;
-        grid-row: 2/3;
+        width: 394px;
+        height: 434px;
     }
 
     .pets__item_fifth {
-        grid-column: 5/10;
-        grid-row: 2/3;
+        width: 295px;
+        height: 434px;
     }
 
     .pets__item_sixth {
-        grid-column: 1/5;
-        grid-row: 3/4;
+        width: 237px;
+        height: 434px;
     }
 }
 
@@ -171,43 +185,23 @@
     }
 
     .pets__list {
-        grid-template-columns: unset;
-        grid-template-rows: unset;
+        display: flex;
         gap: 20px;
-        height: auto;
+        height: 214px;
+        width: auto;
     }
 
     .pets__subtitle {
         font-size: 14px;
+        line-height: 20px;
     }
 
-    .pets__item_one {
-        grid-column: unset;
-        grid-row: unset;
+    .pets__item {
+        height: 214px;
     }
 
-    .pets__item_two {
-        grid-column: unset;
-        grid-row: unset;
-    }
-
-    .pets__item_three {
-        grid-column: unset;
-        grid-row: unset;
-    }
-
-    .pets__item_fourth {
-        grid-column: unset;
-        grid-row: unset;
-    }
-
-    .pets__item_fifth {
-        grid-column: unset;
-        grid-row: unset;
-    }
-
-    .pets__item_sixth {
-        grid-column: unset;
-        grid-row: unset;
+    .button__img {
+        width: 26px;
+        height: 26px;
     }
 }

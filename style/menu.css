@@ -2,7 +2,7 @@
     max-width: 394px;
     min-height: 394px;
     top: -100%;
-    background-color: var( --background);
+    background-color: var(--background);
     position: absolute;
     border-bottom: 10px solid var(--orange);
     transition: 0.4s ease-in-out;
@@ -46,4 +46,40 @@
 
 body.lock {
     overflow: hidden;
+}
+
+.header__contact_mb {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .header__contact_mb {
+        display: flex;
+    }
+
+    .menu__item_mb.menu__item:not(:last-child) {
+        border-bottom: 0;
+    }
+
+    .menu__link_mb {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu__wrapper.active {
+        top: 90px;
+    }
+
+    .menu__wrapper {
+        max-width: 270px;
+        min-height: 326px;
+    }
+
+    .menu__link {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        padding: 15px 20px 15px 15px;
+    }
 }

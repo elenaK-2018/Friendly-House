@@ -21,12 +21,8 @@
     color: #5b5656;
 }
 
-.header__logo {
+.header__logo-img {
     width: 355.52px;
-    height: 71.83px;
-}
-
-.header__logo-img{
     height: 44.6px;
 }
 
@@ -44,4 +40,53 @@
 .header__contact-link {
     font-size: 20px;
     font-weight: 550;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        padding-top: 30px;
+        padding-bottom: 31px;
+    }
+
+    .header__logo-img {
+        height: 37px;
+        width: 300px;
+    }
+
+    .header__logo-title {
+        line-height: 16px;
+    }
+
+    .header__contact-link {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__logo-block {
+        margin-left: auto;
+    }
+
+    .header__contact {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding-top: 20px;
+        padding-bottom: 27px;
+    }
+
+    .header__logo-img {
+        height: 20.07px;
+        width: 161px;
+    }
+
+    .header__contact-link {
+        font-size: 14px;
+        line-height: 18px;
+    }
 }
