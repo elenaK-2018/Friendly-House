@@ -63,6 +63,10 @@
     order: 1;
 }
 
+.list__description-three {
+    max-width: 580px;
+}
+
 @media (max-width: 1024px) {
     .list__item_one {
         gap: 20px;

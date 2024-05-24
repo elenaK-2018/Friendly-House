@@ -33,6 +33,7 @@
 .help__img {
     height: 349px;
     width: 580px;
+    object-fit: cover;
 }
 
 .help__img_one {
@@ -79,7 +80,11 @@
 
 .help__btn {
     left: 50%;
-    transform: translate(-50%);
+    transform: translateX(-50%);
+}
+
+.swiper.swiper-container {
+    display: none;
 }
 
 @media (max-width: 1024px) {
@@ -124,17 +129,17 @@
     }
 
     .help__elem_one {
-        max-width: 300px;
+        width: 300px;
         height: 162px;
     }
 
     .help__elem_two {
-        max-width: 360px;
+        width: 360px;
         height: 391px;
     }
 
     .help__elem_three {
-        max-width: 300px;
+        width: 300px;
         height: 209px;
     }
 
@@ -165,22 +170,22 @@
     }
 
     .help__elem_1 {
-        max-width: 300px;
+        width: 300px;
         height: 491px;
     }
 
     .help__elem_2 {
-        max-width: 377px;
+        width: 377px;
         height: 230px;
     }
 
     .help__elem_3 {
-        max-width: 377px;
+        width: 377px;
         height: 241px;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 730px) {
     .help__title {
         margin-bottom: 10px;
         padding-top: 30px;
@@ -193,11 +198,51 @@
 
     .help__img_one {
         display: flex;
-        height: 131px;
+        height: 150px;
         width: auto;
-        gap: 10px;
+        gap: 0;
     }
 
+    .help__elem_one,
+    .help__elem_two,
+    .help__elem_three {
+        width: 300px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .help__img-item {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .help__img_three {
+        display: flex;
+        height: 180px;
+        width: auto;
+        gap: 0;
+    }
+
+    .help__elem_1,
+    .help__elem_2,
+    .help__elem_3 {
+        width: 300px;
+        height: 180px;
+    }
+
+    .help__img-block {
+        display: none;
+    }
+
+    .swiper.swiper-container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 645px) {
     .help__elem_one,
     .help__elem_two,
     .help__elem_three {
@@ -205,25 +250,14 @@
         height: 131px;
     }
 
-    .help__img_three {
-        display: flex;
-        height: 160px;
-        width: auto;
-        gap: 10px;
+    .help__img_one {
+        height: 131px;
+        width: 295px;
     }
 
-    .help__elem_1 {
-        width: 130px;
-        height: 160px;
-    }
-
-    .help__elem_2 {
-        width: 225px;
-        height: 160px;
-    }
-
+    .help__elem_1,
+    .help__elem_2,
     .help__elem_3 {
-        width: 218px;
-        height: 160px;
+        width: 200px;
     }
 }

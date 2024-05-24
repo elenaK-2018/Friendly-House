@@ -65,6 +65,111 @@ link.on('click', function() {
     closeMenu()
 });
 
+// slider  работает только с перезагрузкой!!!
+
+// let init = false;
+// let swiper;
+// function swiperCard() {
+//     if (window.innerWidth <= 730) {
+//         if (!init) {
+//             init = true;
+//             swiper = new Swiper('.swiper-container', {
+//                 slidesPerView: 1.5,
+//                 loop: true,
+//                 autoplay: {
+//                 delay: 3000,
+//                 },
+//     });
+// }
+// } else if (init) {
+//     swiper.destroy();
+//     init = false;
+// }
+// }
+// swiperCard();
+// window.addEventListener("resize", swiperCard);
+
+
+
+// slider  работает только с перезагрузкой!!!
+
+// let swiper = null;
+
+// function enableSwiper() {
+//     swiper = new Swiper('.swiper-container', {
+//         slidesPerView: 1.5,
+//         loop: true,
+//         autoplay: {
+//             delay: 3000,
+//         },
+//     });
+// }
+
+// function disableSwiper() {
+//     if (swiper !== null) {
+//         swiper.destroy(true, true);
+//         swiper = null;
+//     }
+// }
+
+// function handleResize() {
+//     if (window.innerWidth <= 730) {
+//         if (swiper === null) {
+//             enableSwiper();
+//         }
+//     } else {
+//         if (swiper !== null) {
+//             disableSwiper();
+//         }
+//     }
+// }
+
+// window.addEventListener('resize', handleResize);
+// window.addEventListener('load', handleResize);
+
+// handleResize();
+
+
+// slider
+
+const swiper = new Swiper('.swiper-container', {
+    loop: true,
+    spaceBetween: 10, 
+    speed: 800, 
+    autoplay: {
+        delay: 2000,
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1.5,
+        },
+        480: {
+            slidesPerView: 2,
+        }    
+    },
+});
+
+
+const swiperNew = new Swiper('.sample-slider', {
+    loop: true,
+    slidesPerView: 1, 
+    spaceBetween: 20,        
+    navigation: {
+        nextEl: '.pets__arrow-right',
+        prevEl: '.pets__arrow-left',
+    },
+    on: {
+        resize: function enableOnlyMobile(swiperNew){
+            if(775 < window.innerWidth) {
+                swiperNew.disable()
+                swiperNew.el.classList.add('-non-slider')
+            } else {
+                swiperNew.enable()
+                swiperNew.el.classList.remove('-non-slider')
+            }
+        },
+    }
+})
 
 
 // const navigation = $('.menu__wrapper');

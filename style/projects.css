@@ -11,13 +11,7 @@
     display: grid;
     grid-template-columns: 680px 380px;
     grid-template-rows: 460px 298px;
-    gap: 52px 120px;
-}
-
-@media (max-width: 1440px) {
-    .projects__wrapper {
-        gap: 52px 116px;
-    }
+    gap: 52px 118px;
 }
 
 @media (max-width: 1230px) {
