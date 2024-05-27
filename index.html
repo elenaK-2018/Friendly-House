@@ -9,7 +9,9 @@
     <title>Friendly House</title>
     <link rel="stylesheet" href="style/swiper-bundle.min.css">    
     <link rel="stylesheet" href="style/style.css">
+    <script defer src="js/inputmask.min.js"></script>
     <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="https://api-maps.yandex.ru/2.1/?apikey=e2853b9e-33ca-41f2-8b1c-9da36798593d&lang=ru_RU" type="text/javascript"></script>    
     <script defer src="js/jquery-3.7.1.min.js"></script>
     <script defer src="js/inert.js"></script>
     <script defer src="js/script.js"></script>
@@ -417,7 +419,7 @@
     <footer class="footer" id="contacts">
         <div class="container">
             <div class="footer__wrapper">
-                <img src="image/map.jpeg" alt="Карта с адресом приюта" class="footer__map" loading="lazy" width="680px" height="360px">
+                <div id="map"></div>
                 <div class="footer__address-block">
                     <div class="footer__address-block-one">
                         <h2 class="footer__title">Friendly&nbsp;House</h2>
@@ -516,12 +518,12 @@
                     <legend class="visually-hidden">Форма отправки контактов для связи с вами</legend>                
                     <label class="form__label" id="label-phone">
                         <span class="form__label-text">Номер телефона</span>
-                        <input type="tel" class="form__input" name="phone" aria-required="true" required>
+                        <input type="tel" class="form__input form__input_tel" name="phone" aria-required="true" required>
                     </label>
 
                     <label class="form__label" id="label-mail">
                         <span class="form__label-text">E-mail</span>
-                        <input type="email" class="form__input" name="mail" aria-required="true" required>
+                        <input type="email" class="form__input form__input_mail" name="mail" aria-required="true" required>
                     </label>
                 </fieldset>
 

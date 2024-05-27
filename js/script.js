@@ -4,9 +4,10 @@ const modalBtn = $('.btn');
 const modalClose = $('.form-block__close');
 const modalOverlay = $('.form-block');
 const modalWrapper = $('.form-block__container');
-const modalForm = $('.form__fieldset');
+const modalForm = $('.form');
 const body = $('body');
 const originalModalForm = modalForm.html();
+const modalTitle = $('.form-block__title');
 
 modalBtn.on('click', function() {
     modalOverlay.show(400);
@@ -26,6 +27,30 @@ modalOverlay.on('click', function(event) {
         modalForm.html(originalModalForm);
 	}
 });
+
+modalForm.submit(function (event) {
+    event.preventDefault();
+    $.ajax({
+        url: 'https://jsonplaceholder.typicode.com/posts',
+        type: 'POST',
+        data: $(this).serialize(),
+        success(data) {
+            modalTitle.text('Ваша заявка принята, номер заявки ' + data.id);  
+            modalForm.slideUp(300);
+        },
+        error() {
+            modalTitle.text('Что-то пошло не так, попробуйте позже!');
+        }
+    })
+});
+
+ // маска
+
+const inputTel = document.querySelector('.form__input_tel');    
+const telMask = new Inputmask('+7(999)999-99-99'); 
+
+telMask.mask(inputTel); 
+
 
  // бургер-меню
 
@@ -172,13 +197,41 @@ const swiperNew = new Swiper('.sample-slider', {
 })
 
 
+// карта
+
+ymaps.ready(init);
+
+function init() {
+    var myMap = new ymaps.Map("map", {
+            center: [55.847958, 37.374869],
+            zoom: 15
+    }, 
+    ),
+    // Создаем геообъект с типом геометрии "Точка".
+    myGeoObject = new ymaps.GeoObject({
+        geometry: {
+            type: "Point",
+            coordinates: [55.847958, 37.374869]
+        },      
+    })
+
+    myMap.geoObjects
+        .add(myGeoObject)
+        .add(new ymaps.Placemark([55.847958, 37.374869], {
+            iconCaption: 'Приют для животных'
+        }, 
+    ))
+}
+
+
+
 // const navigation = $('.menu__wrapper');
 // const navigationClose = $('.header__menu-btn');
 // const presentBtn = $('.btn');
 // const modalOrder = $('.form-block')
 // const modalOrderClose = $('.form-block__close');
 
-// //!--inert 
+// //!--inert   для доступности сайта
 
 // let prevActiveElement;
 
@@ -203,7 +256,6 @@ const swiperNew = new Swiper('.sample-slider', {
 //             }
 //             document.addEventListener('keydown', esc);
 //         }
-
 //     }
 // }
 
