@@ -146,6 +146,13 @@ figure {
     align-items: center;
 }
 
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(27, 26, 27, 0.7);
+    z-index: 15;
+}
+
 @media (max-width: 1024px) {
     .container {
         max-width: 920px;
@@ -184,6 +191,10 @@ figure {
         font-size: 18px;
         line-height: 24px;
         font-weight: 500;
+    }
+
+    body.lock {
+        overflow: hidden;
     }
 }
 

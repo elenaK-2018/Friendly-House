@@ -40,12 +40,7 @@
 }
 
 .footer__item-tel {
-    display: block;
     margin-bottom: 20px;
-}
-
-.footer__item-mail {
-    display: block;
 }
 
 .footer__copyright {

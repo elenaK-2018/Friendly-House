@@ -47,14 +47,19 @@
     display: flex;
     gap: 45px;
     justify-content: center;
-    font-weight: 500;
+    align-items: center;
     margin-bottom: 60px;
 }
 
-.contacts__icon {
-    vertical-align: middle;
+.item-cont {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.icon-cont {
     color: var(--orange);
-    margin-right: 14px;
 }
 
 .form-block__subtitle_fieldset {
@@ -172,8 +177,8 @@
         gap: 34px;
     }
 
-    .contacts__icon {
-        margin-right: 9px;
+    .item-cont {
+        gap: 9px;
     }
 
     .form-block__subtitle_fieldset {

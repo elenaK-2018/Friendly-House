@@ -55,23 +55,25 @@ telMask.mask(inputTel);
  // бургер-меню
 
 const burgerMenu = $('.header__menu-btn');
-const menuList = $('.menu__wrapper');
-const link = $('.menu__link');
+const menuList = $('.menu-block');
+const link = $('.menu-block__link');
 
 function openMenu() {
     burgerMenu.addClass('active');
     menuList.addClass('active');
     body.addClass('lock');
+    body.append($('<div></div>').addClass('overlay'));
 }
 
 function closeMenu() {
     burgerMenu.removeClass('active');
     menuList.removeClass('active');
     body.removeClass('lock');
+    $('.overlay').remove();
 }
 
 $(document).on('mousedown', function(event) {
-    if (!$(event.target).closest('.menu__wrapper').length && !$(event.target).is(burgerMenu)) {
+    if (!$(event.target).closest('.menu-block').length && !$(event.target).is(burgerMenu)) {
         closeMenu();
     }
 });
@@ -87,6 +89,10 @@ burgerMenu.on('click', function() {
 });
 
 link.on('click', function() {
+    closeMenu()
+});
+
+body.on('click', '.overlay', function() {
     closeMenu()
 });
 
