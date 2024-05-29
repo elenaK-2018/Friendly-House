@@ -21,6 +21,10 @@
     color: #5b5656;
 }
 
+.header__logo-block {
+    gap: 5px;
+}
+
 .header__logo-img {
     width: 355.52px;
     height: 44.6px;

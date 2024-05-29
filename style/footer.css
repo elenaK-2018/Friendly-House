@@ -48,6 +48,10 @@
     gap: 369px;
 }
 
+.footer__logo-block {
+    gap: 17px;
+}
+
 .footer__logo-img {
     height: 42.59px;
 }
@@ -59,7 +63,7 @@
 .footer__social {
     display: flex;
     gap: 40px;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
 }
 
 .footer__social-item {
